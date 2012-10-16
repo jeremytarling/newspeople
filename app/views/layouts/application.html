@@ -5,9 +5,24 @@
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 		<%= content_tag( 'title', "News People - #{h @page_title}" ) %>
-		<%= stylesheet_link_tag 'reset', 'hacks', 'layout', 'decor' %>
+		<%= stylesheet_link_tag 'default', 'reset', 'hacks', 'layout', 'decor', 'colorPicker', 'weather' %>
 	</head>
 	<body>
+  <header role="banner">
+  <div id="global-header">
+		<a href="http://www.bbc.co.uk"><img src="/images/bbc_blocks.png" width="84" height="24" alt="British Broadcasting Corporation" /></a>
+	</div>
+  <div id="local-header">
+		<h1><a href="http://www.bbc.co.uk/news">News</a></h1>
+	</div> 
+	</header>
+	<div style="padding-left: 125px">
 		<%= @content_for_layout %>
+	</div>
+	<footer>
+	<div id="footer-content">
+		<p>BBC &copy; 2012</p>
+  </div>
+  </footer>
 	</body>
 </html>

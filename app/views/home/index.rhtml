@@ -1,10 +1,11 @@
-<div class="section">
-	<%= content_tag( 'h1', 'People in the News' ) %>
-	<%= content_tag( 'p', "Mapping 'connections' between people by co-occurence in #{link_to( 'BBC News', 'http://www.bbc.co.uk/news')} articles." ) %>
-</div>
+	<div class="section">
+		<%= content_tag( 'h2', 'People in the News' ) %>
+		<%= content_tag( 'p', "Mapping 'connections' between people by co-occurence in #{link_to( 'BBC News', 'http://www.bbc.co.uk/news')} articles." ) %>
+	</div>
 
-<div class="section">
-	<%= content_tag( 'h2', 'Some examples:' ) %>
-	<%= render :partial => 'person/examples' %>
-</div>
-<%= content_tag( 'p', "From articles tagged with #{link_to( 'DBpedia', 'http://dbpedia.org')} concepts. Images from #{link_to( 'Wikipedia', 'http://en.wikipedia.org')}." ) %>
+	<div class="section">
+		<%= content_tag( 'h2', 'Some examples:' ) %>
+		<%= render :partial => 'person/examples' %>
+		<p>&nbsp;</p>
+		<%= content_tag( 'p', "From articles tagged with #{link_to( 'DBpedia', 'http://dbpedia.org')} concepts. Images from #{link_to( 'Wikipedia', 'http://en.wikipedia.org')}." ) %>
+	</div>

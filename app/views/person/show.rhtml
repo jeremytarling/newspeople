@@ -1,5 +1,5 @@
 <div class="section">
-	<%= content_tag( 'h1', ( h @subject_person.name ) ) %>
+	<%= content_tag( 'h2', ( h @subject_person.name ) ) %>
 	<%= content_tag( 'p', ( h @subject_person.description ) ) %>
 	<%= content_tag( 'p', link_to( 'Description from Wikipedia', "http://en.wikipedia.org/wiki/#{@subject_person.url_key}" ), :class => 'attribution' ) %>
 </div>
