@@ -9,6 +9,6 @@ group :development do
   gem "taps", :require => false # has an sqlite dependency, which heroku hates
 end
 
-group :production do
-  gem "pg"
-end
+#group :production do
+#  gem "pg"
+#end
