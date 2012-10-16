@@ -1,0 +1,64 @@
+<div class="section">
+	<%= content_tag( 'h1', ( h @subject_organisation.name ) ) %>
+	<%= content_tag( 'p', ( h @subject_organisation.description ) ) %>
+	<%= content_tag( 'p', link_to( 'Description from Wikipedia', "http://en.wikipedia.org/wiki/#{@subject_organisation.url_key}" ), :class => 'attribution' ) %>
+</div>
+
+<div class="cm">
+	<div id="co-occurrent">
+		<div id="people" class="section">
+			<%= content_tag( 'h2', 'People' ) %>
+			<ol id="people" class="section pretty cm">
+				<%= render :partial => 'person/person', :object => @people[1] if @people.size > 1 %>
+				<%= render :partial => 'person/person', :object => @people[2] if @people.size > 2 %>
+				<%= render :partial => 'person/person', :object => @people[3] if @people.size > 3 %>
+				<%= render :partial => 'person/person', :object => @people[8] if @people.size > 4 %>
+				<%= render :partial => 'person/person', :object => @people[0] %>
+				<%= render :partial => 'person/person', :object => @people[4] if @people.size > 5 %>
+				<%= render :partial => 'person/person', :object => @people[7] if @people.size > 6 %>
+				<%= render :partial => 'person/person', :object => @people[6] if @people.size > 7 %>
+				<%= render :partial => 'person/person', :object => @people[5] if @people.size > 8 %>
+			</ol>
+		</div>
+		<% unless @organisations.empty? -%>
+			<div id="organisations" class="section">
+				<%= content_tag( 'h2', 'Organisations' ) %>
+				<ol class="tag-cloud cm">
+					<%= render :partial => 'organisation/organisation', :collection => @organisations %>
+				</ol>
+			<% end -%>
+		</div>
+	</div>
+	<div id="consume" class="cm">
+		<div id="read" class="section">
+			<%= content_tag( 'h2', 'Read' ) %>
+			<% if @articles.empty? -%>
+				<%= content_tag( 'p', 'Nothing doing' ) %>
+			<% else -%>
+				<ol>
+					<%= render :partial => 'article/article', :collection => @articles %>
+				</ol>
+			<% end -%>
+		</div>
+		<div id="listen" class="section">
+			<%= content_tag( 'h2', 'Listen' ) %>
+			<% if @radio_programmes.empty? -%>
+				<%= content_tag( 'p', 'Nothing doing' ) %>
+			<% else -%>
+				<ol>
+					<%= render :partial => 'programme/programme', :collection => @radio_programmes %>
+				</ol>
+			<% end -%>
+		</div>
+		<div id="watch" class="section">
+			<%= content_tag( 'h2', 'Watch' ) %>
+			<% if @tv_programmes.empty? -%>
+				<%= content_tag( 'p', 'Nothing doing' ) %>
+			<% else -%>
+				<ol>
+					<%= render :partial => 'programme/programme', :collection => @tv_programmes %>
+				</ol>
+			<% end -%>
+		</div>
+	</div>
+</div>

@@ -1,0 +1,107 @@
+body {
+	padding :3em;
+}
+body * {
+	font-family: arial, helvetica, verdana, sans-serif;
+}
+
+
+/* headings */
+h1 {
+	border-color: #202020;
+	border-style: solid;
+	font-size: 1.2em;
+	font-weight: bold;
+}
+h2 {
+	font-weight: bold;
+}
+h3 {
+	font-weight: bold;
+}
+
+/* attribution (link to wikipedia) */
+.attribution {
+	font-size: .8em;
+}
+
+/* list */
+ol.pretty li {
+	background-color: #ccc;
+	-webkit-border-bottom-right-radius: .5em;
+	-webkit-border-bottom-left-radius: .5em;
+	-moz-border-radius-bottomright: .5em;
+	-moz-border-radius-bottomleft: .5em;
+	border-bottom-right-radius: .5em;
+	border-bottom-left-radius: .5em;
+	border-width: 1px;
+}
+ol.pretty li.selected-true {
+	background-color: #f00;
+}
+ol.pretty li a {
+	color: #fff;
+	font-size: .8em;
+	text-decoration: none;
+}
+ol.pretty li:hover {
+	background-color: #f00;
+}
+
+/* tag cloud */
+.cloud-0 {
+	font-size: 100%;
+}
+.cloud-1 {
+	font-size: 110%;
+}
+.cloud-2 {
+	font-size: 120%;
+}
+.cloud-3 {
+	font-size: 130%;
+}
+.cloud-4 {
+	font-size: 140%;
+}
+.cloud-5 {
+	font-size: 150%;
+}
+.cloud-6 {
+	font-size: 160%;
+}
+.cloud-7 {
+	font-size: 170%;
+}
+.cloud-8 {
+	font-size: 180%;
+}
+.cloud-9 {
+	font-size: 190%;
+}
+.cloud-10 {
+	font-size: 200%;
+}
+.tag-cloud a {
+	background-color: #ccc;
+	border-bottom-color: #666;
+	border-left-color: #ccc;
+	border-right-color: #666;
+	border-top-color: #ccc;
+	border-style: solid;
+	color: #666;
+	text-decoration: none;
+}
+.tag-cloud a:hover {
+	background-color: #666;
+	border-bottom-color: #ccc;
+	border-left-color: #444;
+	border-right-color: #ccc;
+	border-top-color: #444;
+	color: #ccc;
+}
+
+/* consume */
+#consume .synopsis, #consume .date {
+	font-size: .7em;
+}

@@ -1,0 +1,3 @@
+<li class="selected-true">
+	<%= link_to( person_image( subject_person ) + content_tag( 'span', ( h subject_person.name ) ), person_show_url( :person => subject_person.url_key ), :title => ( h subject_person.name ) ) %>
+</li>

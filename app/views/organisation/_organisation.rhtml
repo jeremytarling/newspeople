@@ -1,0 +1,3 @@
+<li>
+	<%= link_to( ( h organisation.name ), organisation_show_url( :organisation => organisation.url_key ), :class => "cloud-#{class_for_tag_cloud( organisation.cooccurence_count, @min_organisation_count, @max_organisation_count ) }", :title => "#{organisation.cooccurence_count} articles also tagged with #{h organisation.name}" ) %>
+</li>

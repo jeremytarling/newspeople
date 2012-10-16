@@ -1,0 +1,74 @@
+/* section */
+.section {
+	padding-bottom: 1em;
+}
+
+/* headings */
+h1 {
+	border-width: 0 0 1px;
+	margin-bottom: 1em;
+	padding-bottom: .5em;
+}
+h2 {
+	padding-bottom: .5em;
+}
+
+/* general text */
+p, li {
+	padding-bottom: .5em;
+}
+
+/* co-occurent people and orgs */
+#co-occurrent {
+	float: left;
+	width: 400px;
+}
+
+/* consume (read, listen, watch) */
+#consume {
+	float: left;
+	width: 50%;
+}
+#consume #read, #consume #listen, #consume #watch {
+	float: left;
+	padding-right: 1em;
+	width: 30%;
+}
+
+/* co-occurrent people list */
+ol.pretty {
+	float: left;
+}
+ol.pretty li {
+	border-style: solid;
+	border-width: 1px;
+	float: left;
+	margin-bottom: 1em;
+	margin-right: 1em;
+	text-align: center;
+	width: 100px;
+}
+ol.pretty li img {
+	display: block;
+}
+ol.pretty li span {
+	display: block;
+	margin: 0;
+	min-height: 3em;
+	padding: .3em;
+	vertical-align: bottom;
+}
+
+/* tag cloud */
+.tag-cloud {
+	text-align: center;
+}
+.tag-cloud li {
+	display: inline;
+	margin-right: 2em;
+}
+.tag-cloud a {
+	border-width: 1px;
+	line-height: 2.5em;
+	padding: .2em;
+}
